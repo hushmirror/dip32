@@ -37,8 +37,9 @@ in Dash core has diverged from it.
 
   * What are the exact options of forks of libsecp256k1 and their URLs?
     * Which branch/commit/release of these potential forks is best for Dash to use?
-  * What is the divergence between those forks and the version of libsecp256k1 that exists currently in Dash core?
-
+    * What is the divergence between those forks and the version of libsecp256k1 that exists currently in Dash core?
+  * Once the above questions are answered and a specific commit of a specific libsecp256k1 fork is identified, that code needs to be integrated into the Dash Core codebase
+    * Specifically that means updating the code in the `src/secp256k1` directory https://github.com/dashpay/dash/tree/develop/src/secp256k1
 ## New RPCs
 
 The following is a list of new RPCs which will be needed to support CTs:
