@@ -50,6 +50,9 @@ The following is a list of new RPCs which will be needed to support CTs:
   * `listctaddresses`
     * Args: none
     * Returns a list of all CT addresses
+  * `validateaddress`
+    * Args: string (required)
+    * Recognize CT addresses as valid/invalid and return metadata about them
   * `createrawcttransaction`
     * Args: 
     * Add ability to create raw CT transactions via specifying the amount of an input UTXO
@@ -87,9 +90,5 @@ At a minimum, the following RPCs will be modified to support CTs:
   * `sendtoaddress`
     * Args:
     * Add ability to send to a CT address
-  * `validateaddress`
-    * Args: string (required)
-    * Add ability to recognize CT addresses as valid and return metadata about them
-    * NOTE: Alternately this could be a new RPC which only validates CT addresses. That would prevent certain types of bugs where wallets want to validate normal addresses seperately from validating CT addresses without modifying existing code
 
 Other RPCs may need to be modified to support CTs.
